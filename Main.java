@@ -1,8 +1,5 @@
-package com.example.json.write;
-
 import java.io.IOException;
 import java.util.Scanner;
-import org.json.simple.JSONObject;
 
  class Main {
     public static void main(String[] args) {
@@ -20,22 +17,6 @@ import org.json.simple.JSONObject;
                 String writable = myObj.nextLine();
     
                 WriteFile.main(writable);
-            } else if (answer.equals("write persona")) {
-                System.out.println("What is your name?");
-                String name = myObj.nextLine();
-                System.out.println("What is your age?");
-                String age = myObj.nextLine();
-                System.out.println("What is your quest?");
-                String quest = myObj.nextLine();
-
-                JSONObject persona = new JSONObject();
-                persona.put("name", name);
-                persona.put("age", age);
-                persona.put("quest", quest);
-
-                String fileName = name + ".json";
-                writePersonaToFile.main(fileName, persona);
-
             } else if (answer.equals("read")) {
                 System.out.println("Which file would you like to read from?");
                 String fileName = myObj.nextLine();

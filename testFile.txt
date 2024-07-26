@@ -1,3 +1,2 @@
-Hello world!
-My name is Alejandro!
-This is my first java Project
+Hello world
+My name is Alex
